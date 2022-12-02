@@ -1,5 +1,17 @@
 {
-  "projects": [],
+  "projects": [
+    {
+      "name": "illusion",
+      "budget": "5000",
+      "category": {
+        "id": "2",
+        "name": "Developer"
+      },
+      "projectmanager": 0,
+      "services": [],
+      "id": 1
+    }
+  ],
   "categories": [
     {
       "id": 1,
