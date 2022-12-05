@@ -126,6 +126,17 @@
       "projectmanager": 0,
       "services": [],
       "id": 12
+    },
+    {
+      "name": "rtedd",
+      "budget": "57677",
+      "category": {
+        "id": "1",
+        "name": "Infraestrutura"
+      },
+      "projectmanager": 0,
+      "services": [],
+      "id": 13
     }
   ],
   "categories": [

@@ -5,7 +5,7 @@ import styles from "./Newproject.module.css";
 import ProjectForm from "../project/ProjectForm";
 
 function NewProject() {
-  const history = useNavigate();
+  const navigate = useNavigate();
 
   function createPost(project) {
     //  initialize project-manager and services
@@ -23,7 +23,9 @@ function NewProject() {
       .then((data) => {
         console.log(data);
         //redirect
-        history("/projects", { massage: "Projeto criado com sucesso" });
+        navigate("/projects", {
+          state: { message: "Projeto criado com sucesso" },
+        });
       })
       .catch((err) => {
         console.log(err);
