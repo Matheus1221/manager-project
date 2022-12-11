@@ -1,15 +1,15 @@
 {
   "projects": [
     {
-      "budget": "6000",
-      "name": "illusion",
       "category": {
-        "id": "2",
-        "name": "Developer"
+        "id": "4",
+        "name": "Planejamento"
       },
+      "name": "Project",
+      "budget": "4777",
       "projectmanager": 0,
       "services": [],
-      "id": 1
+      "id": 4
     }
   ],
   "categories": [
