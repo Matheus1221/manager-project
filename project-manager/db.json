@@ -1,15 +1,26 @@
 {
   "projects": [
     {
+      "name": "Illusion",
+      "budget": "5000",
+      "category": {
+        "id": "1",
+        "name": "Infraestrutura"
+      },
+      "projectmanager": 0,
+      "services": [],
+      "id": 5
+    },
+    {
+      "name": "Illusion",
+      "budget": "500000",
       "category": {
         "id": "4",
         "name": "Planejamento"
       },
-      "name": "Project",
-      "budget": "4777",
       "projectmanager": 0,
       "services": [],
-      "id": 4
+      "id": 6
     }
   ],
   "categories": [

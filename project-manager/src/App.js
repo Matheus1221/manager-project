@@ -6,6 +6,7 @@ import Contact from "./components/pages/Contact";
 import Company from "./components/pages/Company";
 import NewProject from "./components/pages/NewProject";
 import Projects from "./components/pages/Projects";
+import Project from "./components/pages/Project";
 
 import Container from "./components/layout/Container";
 import Navbar from "./components/layout/Navbar";
@@ -18,11 +19,12 @@ function App() {
         <Navbar />
         <Container customClass="minHeight">
           <Routes>
-            <Route exact path="/" element={<Home />} />
+            <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/company" element={<Company />} />
             <Route path="/newproject" element={<NewProject />} />
+            <Route path="/project/:id" element={<Project />} />
           </Routes>
         </Container>
         <Footer />
