@@ -7,6 +7,7 @@ import styles from "./Project.module.css";
 
 import Loading from "../layout/Loading";
 import Container from "../layout/Container";
+import ProjectForm from "../project/ProjectForm";
 
 function Project() {
   const { id } = useParams();
@@ -29,6 +30,26 @@ function Project() {
         .catch((err) => console.log(err));
     }, 2000);
   }, [id]);
+
+  function editPost(project) {
+    //budget validation
+    if (project.budget < project.cost) {
+      //mensagem
+    }
+    fetch(`http://localhost:5000/projects/${project.id}`, {
+      method: "PUT",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(project),
+    })
+      .then((resp) => resp.json())
+      .then((data) => {
+        setProject(data);
+        setShowProjectFrom(true);
+      })
+      .catch((err) => console.log(err));
+  }
 
   function toggleProjectForm() {
     setShowProjectFrom(!showProjectFrom);
@@ -61,7 +82,11 @@ function Project() {
                 </div>
               ) : (
                 <div className={styles.project_info}>
-                  <p>form</p>
+                  <ProjectForm
+                    handleSubmit={editPost}
+                    btnText="Finish editing"
+                    projectData={project}
+                  />
                 </div>
               )}
             </div>

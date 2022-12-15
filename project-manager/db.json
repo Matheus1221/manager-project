@@ -1,26 +1,15 @@
 {
   "projects": [
     {
-      "name": "Illusion",
-      "budget": "5000",
+      "name": "Ilusion ATT",
+      "budget": "50000",
       "category": {
-        "id": "1",
-        "name": "Infraestrutura"
+        "id": "2",
+        "name": "Developer"
       },
       "projectmanager": 0,
       "services": [],
-      "id": 5
-    },
-    {
-      "name": "Illusion",
-      "budget": "500000",
-      "category": {
-        "id": "4",
-        "name": "Planejamento"
-      },
-      "projectmanager": 0,
-      "services": [],
-      "id": 6
+      "id": 1
     }
   ],
   "categories": [
