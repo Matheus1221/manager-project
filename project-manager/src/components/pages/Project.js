@@ -7,6 +7,7 @@ import styles from "./Project.module.css";
 
 import Loading from "../layout/Loading";
 import Container from "../layout/Container";
+import Message from "../layout/Message";
 import ProjectForm from "../project/ProjectForm";
 
 function Project() {
@@ -14,6 +15,9 @@ function Project() {
 
   const [project, setProject] = useState([]);
   const [showProjectFrom, setShowProjectFrom] = useState(false);
+  const [showServiceFrom, setShowServiceFrom] = useState(false);
+  const [message, setMessage] = useState();
+  const [type, setType] = useState();
 
   useEffect(() => {
     setTimeout(() => {
@@ -32,9 +36,12 @@ function Project() {
   }, [id]);
 
   function editPost(project) {
+    setMessage("");
     //budget validation
     if (project.budget < project.cost) {
-      //mensagem
+      setMessage("The budget cannot be less than the cost of the project.");
+      setType("error");
+      return false;
     }
     fetch(`http://localhost:5000/projects/${project.id}`, {
       method: "PUT",
@@ -46,7 +53,9 @@ function Project() {
       .then((resp) => resp.json())
       .then((data) => {
         setProject(data);
-        setShowProjectFrom(true);
+        setShowProjectFrom(false);
+        setMessage("Project edited successfully");
+        setType("success");
       })
       .catch((err) => console.log(err));
   }
@@ -54,12 +63,16 @@ function Project() {
   function toggleProjectForm() {
     setShowProjectFrom(!showProjectFrom);
   }
+  function toggleServiceForm() {
+    setShowServiceFrom(!showServiceFrom);
+  }
 
   return (
     <>
       {project.name ? (
         <div className={styles.project_details}>
           <Container customClass="column">
+            {message && <Message type={type} msg={message} />}
             <div className={styles.details_container}>
               <h1>Project: {project.name}</h1>
               <button className={styles.btn} onClick={toggleProjectForm}>
@@ -90,6 +103,19 @@ function Project() {
                 </div>
               )}
             </div>
+            <div className={styles.service_form_container}>
+              <h2>Add an service:</h2>
+              <button className={styles.btn} onClick={toggleServiceForm}>
+                {!showServiceFrom ? "Add services" : "Close"}
+              </button>
+              <div className={styles.project_info}>
+                {showServiceFrom && <div>Formulary of services</div>}
+              </div>
+            </div>
+            <h2>services</h2>
+            <Container customClass="start">
+              <p>itens from service</p>
+            </Container>
           </Container>
         </div>
       ) : (

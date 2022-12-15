@@ -29,7 +29,6 @@ function ProjectCard({ id, name, budget, category, handleRemove }) {
           <BsFillTrashFill /> To Delete
         </button>
       </div>
-      +
     </div>
   );
 }

@@ -1,11 +1,11 @@
 {
   "projects": [
     {
-      "name": "Ilusion ATT",
-      "budget": "50000",
+      "name": "Illusion ATT/2",
+      "budget": "144444",
       "category": {
-        "id": "2",
-        "name": "Developer"
+        "id": "1",
+        "name": "Infraestrutura"
       },
       "projectmanager": 0,
       "services": [],
