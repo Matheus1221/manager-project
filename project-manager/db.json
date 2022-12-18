@@ -1,15 +1,23 @@
 {
   "projects": [
     {
-      "name": "Illusion ATT/2",
-      "budget": "144444",
+      "name": "Illusion ATI",
+      "budget": "1500",
       "category": {
         "id": "1",
         "name": "Infraestrutura"
       },
       "projectmanager": 0,
-      "services": [],
-      "id": 1
+      "services": [
+        {
+          "name": "my service 1",
+          "Cost": "100",
+          "description": "fazer iso",
+          "id": "8894f4fa-ea43-49bc-8bd5-cf400b9b75b5"
+        }
+      ],
+      "id": 1,
+      "cost": null
     }
   ],
   "categories": [

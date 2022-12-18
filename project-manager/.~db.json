@@ -1,0 +1,65 @@
+{
+  "projects": [
+    {
+      "name": "Illusion ATI",
+      "budget": "1500",
+      "category": {
+        "id": "1",
+        "name": "Infraestrutura"
+      },
+      "projectmanager": 0,
+      "services": [
+        {
+          "name": "my service 1",
+          "Cost": "100",
+          "description": "fazer iso",
+          "id": "8894f4fa-ea43-49bc-8bd5-cf400b9b75b5"
+        },
+        {
+          "Cost": "155555",
+          "name": "illusion",
+          "description": "Piano, poesias e filosofia lavei meu pau na tua pia.",
+          "id": "8e4b8383-fead-428b-b576-078059803a86"
+        },
+        {
+          "Cost": "155555",
+          "name": "illusion",
+          "description": "Piano, poesias e filosofia lavei meu pau na tua pia.",
+          "id": "8e4b8383-fead-428b-b576-078059803a86"
+        },
+        {
+          "Cost": "155555",
+          "name": "illusion",
+          "description": "Piano, poesias e filosofia lavei meu pau na tua pia.",
+          "id": "8e4b8383-fead-428b-b576-078059803a86"
+        },
+        {
+          "Cost": "155555",
+          "name": "illusion",
+          "description": "Piano, poesias e filosofia lavei meu pau na tua pia.",
+          "id": "8e4b8383-fead-428b-b576-078059803a86"
+        }
+      ],
+      "id": 1,
+      "cost": null
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Infraestrutura"
+    },
+    {
+      "id": 2,
+      "name": "Developer"
+    },
+    {
+      "id": 3,
+      "name": "Designer"
+    },
+    {
+      "id": 4,
+      "name": "Planejamento"
+    }
+  ]
+}
