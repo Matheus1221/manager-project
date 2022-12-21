@@ -1,27 +1,14 @@
 {
   "projects": [
     {
-      "name": "Illusion",
-      "budget": "4000",
+      "name": "Illusion teste",
+      "budget": "5000",
       "category": {
-        "id": "1",
-        "name": "Infraestrutura"
+        "id": "2",
+        "name": "Developer"
       },
-      "projectmanager": 1100,
-      "services": [
-        {
-          "projectmanager": "100",
-          "name": "Illusion",
-          "description": "fazer isso",
-          "id": "24b237cc-8798-4a7e-af35-34553f38087a"
-        },
-        {
-          "projectmanager": "1000",
-          "name": "Illusion",
-          "description": "fazer isso",
-          "id": "bc017c6d-46df-4cb0-a593-6d67009f38de"
-        }
-      ],
+      "projectmanager": 0,
+      "services": [],
       "id": 1
     }
   ],
