@@ -40,7 +40,7 @@ function Project() {
   function editPost(project) {
     setMessage("");
     //budget validation
-    if (project.cost > project.budget) {
+    if (project.projectmanager > project.budget) {
       setMessage("The budget cannot be less than the cost of the project.");
       setType("error");
       return false;
@@ -69,23 +69,25 @@ function Project() {
 
     lastService.id = uuidv4();
 
-    const lastServiceCost = lastService.cost;
-    const newCost = parseFloat(project.cost) + parseFloat(lastServiceCost);
+    const lastServiceProjectmanager = lastService.projectmanager;
+    const newProjectmanager =
+      parseFloat(project.projectmanager) +
+      parseFloat(lastServiceProjectmanager);
 
     //max value validation
 
-    if (newCost > parseFloat(project.budget)) {
+    if (newProjectmanager > parseFloat(project.budget)) {
       setMessage("budget exceeded, check the value");
       setType("error");
       project.services.pop();
       return false;
     }
-    project.cost = newCost;
+    project.projectmanager = newProjectmanager;
 
     //update project
 
     fetch(`http://localhost:5000/projects/${project.id}`, {
-      method: "PUT",
+      method: "PATCH",
       headers: {
         "content-type": "application/json",
       },

@@ -1,23 +1,28 @@
 {
   "projects": [
     {
-      "name": "Illusion ATI",
-      "budget": "1500",
+      "name": "Illusion",
+      "budget": "4000",
       "category": {
         "id": "1",
         "name": "Infraestrutura"
       },
-      "projectmanager": 0,
+      "projectmanager": 1100,
       "services": [
         {
-          "name": "my service 1",
-          "Cost": "100",
-          "description": "fazer iso",
-          "id": "8894f4fa-ea43-49bc-8bd5-cf400b9b75b5"
+          "projectmanager": "100",
+          "name": "Illusion",
+          "description": "fazer isso",
+          "id": "24b237cc-8798-4a7e-af35-34553f38087a"
+        },
+        {
+          "projectmanager": "1000",
+          "name": "Illusion",
+          "description": "fazer isso",
+          "id": "bc017c6d-46df-4cb0-a593-6d67009f38de"
         }
       ],
-      "id": 1,
-      "cost": null
+      "id": 1
     }
   ],
   "categories": [
