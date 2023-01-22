@@ -1,7 +1,7 @@
 {
   "projects": [
     {
-      "name": "Illusion teste",
+      "name": "Illusion teste2",
       "budget": "5000",
       "category": {
         "id": "2",
@@ -10,6 +10,30 @@
       "projectmanager": 0,
       "services": [],
       "id": 1
+    },
+    {
+      "name": "elisângela",
+      "budget": "150000",
+      "category": {
+        "id": "4",
+        "name": "Planejamento"
+      },
+      "projectmanager": 100000,
+      "services": [
+        {
+          "name": "contratar dev front-end",
+          "projectmanager": "50000",
+          "description": "desenvolver o que o usuário pode visualizar",
+          "id": "36bde414-ca43-457e-af8d-f14d72cb9a75"
+        },
+        {
+          "name": "contratar dev back-end",
+          "projectmanager": "50000",
+          "description": "implantar/criar api, banco de dados e conexão ao front-end",
+          "id": "5aa11b35-dcbc-4597-9f29-eadcd51b9f90"
+        }
+      ],
+      "id": 2
     }
   ],
   "categories": [
